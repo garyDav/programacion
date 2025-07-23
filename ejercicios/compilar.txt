@@ -1,0 +1,9 @@
+Paso a paso
+g++ -c hola.cpp
+ls
+g++ hola.o -o hola
+ls
+./hola
+
+Directa
+g++ hola.cpp -o hola
