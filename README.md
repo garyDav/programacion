@@ -16,7 +16,9 @@
 
 #### Materiales
 
-#### Enlaces destacads
+#### Enlaces destacados
 
 * Editor en línea: [Editor C++](https://www.onlinegdb.com)
+
+* Compilador C++: [MinGW](http://www.mingw.org)
 
