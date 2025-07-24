@@ -51,13 +51,13 @@ Además los módulos facilitan enormemente el mantenimiento y detección de erro
 
 El segundo principio busca que los programas sean **fáciles de entender**.
 
-Cuando usamos estructuras estándar al programar, el código se vuelve más claro y fácil de mantener. En cambio, si usamos formas complicadas o poco comunes, puede volverse confuso.
+Cuando usamos ***estructuras estándar*** al programar, el código se vuelve más claro y fácil de mantener. En cambio, si usamos formas complicadas o poco comunes, puede volverse confuso.
 
-### 📦 Estructuras básicas (según el teorema de programación estructurada)
+### 📦 Estructuras básicas (según el paradigma de programación estructurada)
 
 1. **Secuencia** → instrucciones que se ejecutan una tras otra.
-2. **Selección** → decisiones con `if`, `then`, `else`.
-3. **Iteración** → bucles con `while`, `for`, etc.
+2. **Selección** → decisiones con `if`, `else`, `switch`.
+3. **Iteración** → bucles con `do-while`, `while`, `for`, etc.
 
 Aunque estas estructuras son la base, a veces usarlas de forma rígida puede generar lógicas difíciles de seguir. Por eso, los lenguajes de programación suelen ofrecer formas de modificarlas o extenderlas.
 
@@ -69,7 +69,7 @@ Una estructura estándar es aquella que tiene **una única entrada y una única 
 
 ## 🔒 Principio de validación de datos
 
-Este principio tiene como objetivo **evitar errores** al recibir o mostrar información en un programa.
+Este principio tiene como objetivo **evitar errores** al recibir o mostrar información en un programa, o al momento que el usuario interactúa con el programa.
 
 En otras palabras, se busca que los datos que el usuario ingresa sean correctos desde el principio, y que los resultados que el programa devuelve también estén bien presentados.
 
@@ -95,7 +95,7 @@ Además, C++ es un lenguaje ampliamente usado en la industria, lo que lo convier
 
 ## 🔧 Instalación del compilador MinGW
 
-Para que puedas compilar y ejecutar tus programas en C++, necesitas un **compilador**. En este curso se utiliza **MinGW**, que puedes descargar desde [http://www.mingw.org](http://www.mingw.org).
+Para que puedas compilar y ejecutar tus programas en C++, necesitas un **compilador**. En este curso se utiliza **MinGW**, que puedes descargar desde [https://www.mingw-w64.org/downloads](https://www.mingw-w64.org/downloads/).
 
 Una vez instalado MinGW, es necesario que el sistema lo reconozca. Para esto hay que **añadir la ruta al directorio `bin` de MinGW en la variable de entorno `Path`** de Windows.
 
@@ -140,6 +140,18 @@ notepad hola.cpp
 
 Escribe tu código, guárdalo como `hola.cpp` y asegúrate de que tenga un salto de línea al final del archivo para evitar advertencias del compilador.
 
+```cpp
+#include <iostream>
+using namespace std;
+
+int main()
+{
+    cout<<"Hola Mundo!!!"<<endl;
+
+    return 0;
+}
+```
+
 ---
 
 ## 🛠️ Compilar con MinGW y g++
@@ -157,15 +169,15 @@ Y para ejecutarlo:
 hola.exe
 ```
 
-Verás el mensaje `¡¡Hola Mundo!!` si todo está correcto.
+Verás el mensaje `Hola Mundo!!!` si todo está correcto.
 
 ---
 
 ## 📚 Sobre las librerías en C++
 
-Aunque puedes usar librerías de C como `<stdio.h>`, es mejor emplear sus versiones modernizadas en C++, que tienen nombres como `<cstdio>`.
+Para C++ utilizamos como nuestra primera librería `iostream`.
 
-Además, al usar funciones propias de C++ como `cout` y `endl`, necesitas incluir:
+Utilizan funciones propias de C++ como `cout` y `endl`, necesitas incluir:
 
 ```cpp
 #include <iostream>
@@ -186,10 +198,7 @@ int main() {
 ## ✅ ¿Qué se aprende con esta práctica?
 
 - Cómo se crea, compila y ejecuta un programa desde cero.
-- La diferencia entre librerías de C y C++.
 - Fundamentos de la programación estructurada.
-
-> Para proyectos grandes, se usará Eclipse, pero este enfoque inicial ayuda a entender cómo funciona todo desde adentro.
 
 ### 1.5. Ejemplos
 
