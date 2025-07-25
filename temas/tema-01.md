@@ -227,12 +227,40 @@ Este enfoque modular permite que cada parte se entienda y se pruebe por separado
 
 Como es un programa simple, no hace falta complicarse: con una secuencia de instrucciones (una tras otra) es suficiente para resolverlo.
 
-#### 3. Validar los datos (lo mejor posible)
+```cpp
+#include <iostream>
+using namespace std;
 
-Aunque no tenemos mucha información sobre el tipo de número que se va a ingresar (si es entero, decimal, grande o pequeño), se usará el tipo **`double`**, porque:
-- Soporta números reales e incluye a los enteros.
-- Tiene buena capacidad para manejar la mayoría de valores frecuentes.
+// double: 1.5, 87.4334
+double leerDato() {
+  double num;
+  cout<<"Escriba un número: ";
+  cin>>num;
+  return num;
+}
 
-Más adelante, se podrán aplicar estructuras como `if` o `while` para validar mejor los datos, pero por ahora lo importante es entender cómo se arma el proceso básico.
+void mostrarRes(double num, double res) {
+  cout<<"El cubo de "<<num<<" es: "<<res<<endl;
+}
 
+double cubo (double num) {
+    return num*num*num;
+}
 
+int main() {
+  // Declarar y Asignar Variables
+  // [Tipo Dato] nombreVariable
+  // Declaración
+  double numero, resultado;
+
+  // Lectura de número
+  numero = leerDato();
+
+  // Cálculo del cubo
+  resultado = cubo(numero);
+
+  // Mostrar Resultado
+  mostrarRes(numero, resultado);
+  return 0;
+}
+```

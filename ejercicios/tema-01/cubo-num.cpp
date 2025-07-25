@@ -13,18 +13,23 @@ void mostrarRes(double num, double res) {
   cout<<"El cubo de "<<num<<" es: "<<res<<endl;
 }
 
+double cubo (double num) {
+    return num*num*num;
+}
+
 int main() {
   // Declarar y Asignar Variables
   // [Tipo Dato] nombreVariable
   // Declaración
-  double numero;
+  double numero, resultado;
 
   // Lectura de número
   numero = leerDato();
 
   // Cálculo del cubo
+  resultado = cubo(numero);
 
   // Mostrar Resultado
-  mostrarRes(numero, 20);
+  mostrarRes(numero, resultado);
   return 0;
 }
