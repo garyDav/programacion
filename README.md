@@ -12,7 +12,9 @@
 
 1. **Tema 1** - [Introducción](./temas/tema-01.md)
 
-2. **Tema 2** - Secuencia
+2. **Tema 2** - [Secuencia](./temas/tema-02.md)
+
+3. **Tema 3** - [Secuencia](./temas/tema-03.md)
 
 #### Materiales
 
