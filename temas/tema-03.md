@@ -110,3 +110,44 @@ contrario (si es uno) es impar.
 El problema surge cuando el numero es cero (pues el residuo de 0 entre 2 es también 0), por ello, para determinar si un número es par, impar o cero, primero se debe averiguar si el número es cero y si no determinar si es par o impar.
 
 
+### 🔍 Estructura Switch e If - Else If
+
+Cuando la lógica que resuelve el problema implica dos o más condiciones consecutivas, donde el caso contrario es siempre otra condición, tal como se muestra en el siguiente diagrama:
+
+![If-else-if](../img/tema-03-img-001.png)
+
+La forma más clara de codificarla es mediante la estructura “if – else if”, que simplemente es la estructura “if”, pero ordenada de manera que se puedan ver claramente las diferentes condiciones:
+
+![If-else-if](../img/tema-03-img-002.png)
+
+### Estructura condicional con múltiples casos (`if`, `else if`, `else`)
+
+Como se muestra en el diagrama:
+
+- Si **una de las condiciones** se cumple, se ejecuta **su bloque correspondiente** y luego el programa continúa normalmente con la siguiente instrucción.
+- Si **ninguna condición** es verdadera, se ejecuta el bloque por defecto: el último `else`.
+
+> 💡 Al igual que en una estructura `if-else` estándar, el bloque `else` **es opcional**. Si no se incluye, simplemente no se ejecuta nada especial y el programa sigue con lo que venga.
+
+---
+
+### Uso de llaves `{}` para bloques
+
+- Si hay **más de una instrucción** que debe ejecutarse cuando una condición se cumple, estas deben encerrarse **entre llaves `{}`** para formar un bloque.
+- Esto asegura que todas las instrucciones se ejecuten como una sola unidad.
+
+---
+
+### Comparación por igualdad
+
+Cuando se evalúa el mismo valor (una variable o expresión) contra distintos valores fijos —como números enteros, caracteres, valores enumerados, etc.— podemos usar estructuras tipo `switch` o múltiples `if-else` para organizar mejor la lógica condicional.
+
+![If-else-if](../img/tema-03-img-003.png)
+
+Una forma más clara y eficiente de programarla es con estructura “switch”:
+
+![If-else-if](../img/tema-03-img-004.png)
+
+#### Ej. 2.
+
+

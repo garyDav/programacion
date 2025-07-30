@@ -24,3 +24,6 @@
 
 * Compilador C++: [MinGW](http://www.mingw.org)
 
+* Diagramas Algoritmos: [Lucidchart](https://lucid.app/lucidchart)
+
+* Diagramas: [DrawIO](https://app.diagrams.net/)
